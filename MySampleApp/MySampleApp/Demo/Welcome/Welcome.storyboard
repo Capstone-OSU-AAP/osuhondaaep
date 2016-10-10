@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="LZq-7N-5bb">
+            <objects>
+                <viewController id="e31-eh-gmH" customClass="HomeController" customModule="Automotive_English_Program" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OSI-no-8Kw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mr8-1v-0R2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kKb-JV-Jx5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGk-BS-qaB">
+                                <frame key="frameInset" minX="49" minY="135" width="222" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="How to get started 始めましょう"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34i-an-YX8">
+                                <frame key="frameInset" minX="49" minY="205" width="222" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My coach 先生"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzO-dI-mxI">
+                                <frame key="frameInset" minX="49" minY="275" width="222" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lessons 授業"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7f-gX-hzN">
+                                <frame key="frameInset" minX="49" minY="345" width="222" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Profile マイプロフィール"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome いらっしゃいませ！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU2-3w-MAg">
+                                <frame key="frameInset" minX="46" minY="106" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tGk-BS-qaB"/>
+                                <exclude reference="34i-an-YX8"/>
+                                <exclude reference="KzO-dI-mxI"/>
+                                <exclude reference="l7f-gX-hzN"/>
+                                <exclude reference="JU2-3w-MAg"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tGk-BS-qaB"/>
+                                <include reference="34i-an-YX8"/>
+                                <include reference="KzO-dI-mxI"/>
+                                <include reference="l7f-gX-hzN"/>
+                                <include reference="JU2-3w-MAg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="m0S-Fj-4qM">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ImV-3r-TEV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="vOe-lr-k36">
+                                <rect key="frame" x="313" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="LogoutButtonPressed:" destination="e31-eh-gmH" eventType="touchUpInside" id="NGO-M2-Vcu"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="HowToGetStartedTextButton" destination="tGk-BS-qaB" id="rL6-CI-KSa"/>
+                        <outlet property="LessonsTextButton" destination="KzO-dI-mxI" id="wpc-Xy-X1S"/>
+                        <outlet property="MyCoachTextButton" destination="34i-an-YX8" id="WgQ-Q3-jVn"/>
+                        <outlet property="MyProfileTextButton" destination="l7f-gX-hzN" id="j9l-Cv-aWD"/>
+                        <outlet property="WelcomeTextLabel" destination="JU2-3w-MAg" id="koH-yc-XMq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="brB-Zb-Bb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="343"/>
+        </scene>
+    </scenes>
+</document>
